@@ -1,5 +1,5 @@
 /* dark color scheme */
-@define-color dark_bg_color #222222;
+@define-color dark_bg_color #222;
 @define-color dark_fg_color #eee;
 /* colormap actually used by the theme, to be overridden in other css files */
 @define-color theme_bg_color #eee;
@@ -8,7 +8,7 @@
 @define-color theme_text_color #333;
 @define-color theme_selected_bg_color #f0544c;
 @define-color theme_selected_fg_color #fff;
-@define-color theme_tooltip_bg_color #222222;
+@define-color theme_tooltip_bg_color #222;
 @define-color theme_tooltip_fg_color #eee;
 /* shadow effects */
 @define-color light_shadow #fff;
@@ -42,14 +42,14 @@
 @define-color insensitive_bg_color mix(#eee,#fff,0.6);
 @define-color insensitive_fg_color mix(#555,#eee,0.5);
 /* osd */
-@define-color osd_base #222222;
+@define-color osd_base #222;
 @define-color osd_bg rgba(68, 68, 68, 0.8);
 @define-color osd_fg #eee;
 @define-color osd_insensitive_bg_color mix(#eee,rgba(68, 68, 68, 0.8),0.5);
-@define-color osd_insensitive_fg_color mix(#eee,#222222,0.6);
+@define-color osd_insensitive_fg_color mix(#eee,#222,0.6);
 @define-color osd_borders_color rgba(58, 58, 58, 0.8);
 /* lightdm greeter colors */
-@define-color lightdm_bg_color #222222;
+@define-color lightdm_bg_color #222;
 @define-color lightdm_fg_color #eee;
 /* widget text/foreground color on backdrop windows */
 @define-color theme_unfocused_fg_color mix(#555,#eee,0.5);
@@ -66,15 +66,15 @@
 /* insensitive color on backdrop windows*/
 @define-color unfocused_insensitive_color #c8c8c8;
 /* window manager colors */
-@define-color wm_bg #222222;
+@define-color wm_bg #222;
 @define-color wm_border_focused transparent;
 @define-color wm_border_unfocused transparent;
-@define-color wm_title_focused mix(#eee,#222222,0.1);
-@define-color wm_title_unfocused mix(#eee,#222222,0.4);
-@define-color wm_icons_focused mix(#eee,#222222,0.1);
+@define-color wm_title_focused mix(#eee,#222,0.1);
+@define-color wm_title_unfocused mix(#eee,#222,0.4);
+@define-color wm_icons_focused mix(#eee,#222,0.1);
 @define-color wm_icons_focused_prelight #f0544c;
 @define-color wm_icons_focused_pressed #e91e14;
-@define-color wm_icons_unfocused mix(#eee,#222222,0.4);
+@define-color wm_icons_unfocused mix(#eee,#222,0.4);
 @define-color wm_icons_unfocused_prelight #f0544c;
 @define-color wm_icons_unfocused_pressed #e91e14;
 /**************
@@ -715,14 +715,14 @@ headerbar {
     border-top-right-radius: 2px; }
 
 headerbar, .titlebar:not(headerbar) {
-  background-color: #222222;
+  background-color: #222;
   background-image: none;
   border-color: #363636;
   color: #eee;
-  background-color: #222222;
+  background-color: #222;
   background-image: none;
   border-radius: 2px 2px 0 0;
-  color: mix(#eee,#222222,0.1);
+  color: mix(#eee,#222,0.1);
   padding: 0 5px;
   min-height: 42px; }
   headerbar:focus, .titlebar:focus:not(headerbar), headerbar:hover, .titlebar:hover:not(headerbar) {
@@ -736,7 +736,7 @@ headerbar, .titlebar:not(headerbar) {
   headerbar:disabled, .titlebar:disabled:not(headerbar) {
     background-color: #3d3d3d;
     background-image: none;
-    color: mix(#eee,#222222,0.5); }
+    color: mix(#eee,#222,0.5); }
   headerbar .title, .titlebar:not(headerbar) .title {
     font-weight: bold;
     padding: 0 10px; }
@@ -794,14 +794,14 @@ headerbar, .titlebar:not(headerbar) {
     headerbar button:disabled:disabled, .titlebar:not(headerbar) button:disabled:disabled, headerbar button.flat:disabled:disabled, .titlebar:not(headerbar) button.flat:disabled:disabled {
       background-color: rgba(82, 82, 82, 0.3);
       background-image: none;
-      color: mix(#222222,#eee,0.5);
+      color: mix(#222,#eee,0.5);
       box-shadow: none; }
     headerbar button:active, .titlebar:not(headerbar) button:active {
       color: #eee; }
     headerbar button.flat:disabled:disabled, .titlebar:not(headerbar) button.flat:disabled:disabled {
       background-color: transparent;
       background-image: none;
-      color: mix(#222222,#eee,0.5);
+      color: mix(#222,#eee,0.5);
       box-shadow: none; }
     headerbar button.separator, .titlebar:not(headerbar) button.separator, headerbar button .separator, .titlebar:not(headerbar) button .separator {
       border: 1px solid currentColor;
@@ -837,9 +837,9 @@ headerbar, .titlebar:not(headerbar) {
     border-color: currentColor;
     -GtkWidget-window-dragging: true; }
   headerbar:backdrop, .titlebar:backdrop:not(headerbar) {
-    background-color: #222222;
+    background-color: #222;
     background-image: none;
-    color: mix(#eee,#222222,0.6);
+    color: mix(#eee,#222,0.6);
     text-shadow: none; }
   headerbar.default-decoration, .default-decoration.titlebar:not(headerbar) {
     min-height: 24px;
@@ -863,7 +863,7 @@ headerbar, .titlebar:not(headerbar) {
     border: 0;
     background-image: none;
     background-color: transparent;
-    color: mix(#eee,#222222,0.1);
+    color: mix(#eee,#222,0.1);
     box-shadow: none; }
     headerbar button.titlebutton:hover, .titlebar:not(headerbar) button.titlebutton:hover, headerbar button.titlebutton:hover:focus, .titlebar:not(headerbar) button.titlebutton:hover:focus {
       background-image: none;
@@ -877,7 +877,7 @@ headerbar, .titlebar:not(headerbar) {
       box-shadow: none; }
     headerbar button.titlebutton:backdrop, .titlebar:not(headerbar) button.titlebutton:backdrop {
       background: none;
-      color: mix(#eee,#222222,0.6);
+      color: mix(#eee,#222,0.6);
       -gtk-icon-shadow: none; }
 
 toolbar {
@@ -2404,7 +2404,7 @@ menubar, .menubar {
   -GtkWidget-window-dragging: true;
   padding: 0;
   border: 0;
-  background-color: #222222;
+  background-color: #222;
   background-image: none;
   color: #eee; }
   menubar > menuitem, .menubar > menuitem {
@@ -2415,8 +2415,8 @@ menubar, .menubar {
     background-image: none;
     color: #eee; }
     menubar > menuitem:hover, .menubar > menuitem:hover {
-      border-color: mix(#222222,#eee,0.21);
-      background-color: mix(#222222,#eee,0.21);
+      border-color: mix(#222,#eee,0.21);
+      background-color: mix(#222,#eee,0.21);
       background-image: none;
       color: white; }
     menubar > menuitem *:hover, .menubar > menuitem *:hover {
@@ -2431,7 +2431,7 @@ menu,
   border: 0;
   border-radius: 0;
   padding: 2px 0;
-  background-color: #222222;
+  background-color: #222;
   color: #eee; }
   .csd menu, .csd
   .menu, .csd
@@ -2481,7 +2481,7 @@ menu,
     .menu menuitem *:disabled,
     .context-menu menuitem:disabled,
     .context-menu menuitem *:disabled {
-      color: mix(#eee,#222222,0.5); }
+      color: mix(#eee,#222,0.5); }
     menu menuitem arrow,
     .menu menuitem arrow,
     .context-menu menuitem arrow {
@@ -2569,7 +2569,7 @@ menu,
       .menu menuitem calendar:indeterminate:backdrop,
       .context-menu menuitem calendar:indeterminate,
       .context-menu menuitem calendar:indeterminate:backdrop {
-        color: mix(#eee,#222222,0.5); }
+        color: mix(#eee,#222,0.5); }
     menu menuitem label:dir(rtl), menu menuitem label:dir(ltr),
     .menu menuitem label:dir(rtl),
     .menu menuitem label:dir(ltr),
@@ -2582,7 +2582,7 @@ menu,
     min-height: 16px;
     min-width: 16px;
     padding: 5px;
-    background-color: #222222;
+    background-color: #222;
     border-radius: 0; }
     menu > arrow.top,
     .menu > arrow.top,
@@ -2622,7 +2622,7 @@ menuitem accelerator {
   menuitem accelerator:hover {
     color: rgba(255, 255, 255, 0.8); }
   menuitem accelerator:disabled {
-    color: alpha(mix(#eee,#222222,0.5),0.4); }
+    color: alpha(mix(#eee,#222,0.5),0.4); }
 menuitem check, menuitem radio {
   min-height: 16px;
   min-width: 16px; }
@@ -2633,7 +2633,7 @@ menuitem check, menuitem radio {
 menuitem window decoration {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
 menuitem entry {
-  background-color: #222222;
+  background-color: #222;
   background-image: none;
   border-color: #363636;
   padding: 5px;
@@ -2652,7 +2652,7 @@ menuitem entry {
   menuitem entry:disabled {
     background-color: #3d3d3d;
     background-image: none;
-    color: mix(#222222,#eee,0.5); }
+    color: mix(#222,#eee,0.5); }
 
 /*********
  ! Popover
@@ -2661,7 +2661,7 @@ popover.background {
   padding: 2px;
   border-radius: 2px;
   background-clip: border-box;
-  background-color: #222222;
+  background-color: #222;
   background-image: none;
   color: #eee;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
@@ -2704,7 +2704,7 @@ popover.background {
     border-color: #363636;
     border-radius: 2px; }
   popover.background entry {
-    background-color: #222222;
+    background-color: #222;
     background-image: none;
     border-color: #363636;
     padding: 5px;
@@ -2723,7 +2723,7 @@ popover.background {
     popover.background entry:disabled {
       background-color: #3d3d3d;
       background-image: none;
-      color: mix(#222222,#eee,0.5); }
+      color: mix(#222,#eee,0.5); }
   popover.background button {
     background-color: #525252;
     background-image: none;
@@ -2775,14 +2775,14 @@ popover.background {
     popover.background button:disabled:disabled, popover.background button.flat:disabled:disabled {
       background-color: rgba(82, 82, 82, 0.3);
       background-image: none;
-      color: mix(#222222,#eee,0.5);
+      color: mix(#222,#eee,0.5);
       box-shadow: none; }
     popover.background button:active {
       color: #eee; }
     popover.background button.flat:disabled:disabled {
       background-color: transparent;
       background-image: none;
-      color: mix(#222222,#eee,0.5);
+      color: mix(#222,#eee,0.5);
       box-shadow: none; }
     popover.background button.separator, popover.background button .separator {
       border: 1px solid currentColor;
@@ -2835,7 +2835,7 @@ menuitem.button.flat {
 .tooltip.background, .tooltip.background.csd,
 tooltip.background,
 tooltip.background.csd {
-  background-color: #222222;
+  background-color: #222;
   background-clip: padding-box;
   border: 1px solid #363636;
   border-radius: 2px;
@@ -3792,7 +3792,7 @@ progressbar.osd {
         color: rgba(69, 69, 69, 0.8); }
   .osd entry,
   #XfceNotifyWindow entry {
-    background-color: #222222;
+    background-color: #222;
     background-image: none;
     border-color: #363636;
     padding: 5px;
@@ -3827,7 +3827,7 @@ progressbar.osd {
     #XfceNotifyWindow entry:disabled {
       background-color: #3d3d3d;
       background-image: none;
-      color: mix(#222222,#fff,0.5); }
+      color: mix(#222,#fff,0.5); }
   .osd trough, .osd.trough,
   #XfceNotifyWindow trough,
   #XfceNotifyWindow.trough {
@@ -3947,7 +3947,7 @@ progressbar.osd {
       background-image: none; }
   .osd spinbutton:not(.vertical),
   #XfceNotifyWindow spinbutton:not(.vertical) {
-    background-color: #222222;
+    background-color: #222;
     background-image: none;
     border-color: #363636;
     padding: 0;
@@ -3982,7 +3982,7 @@ progressbar.osd {
     #XfceNotifyWindow spinbutton:not(.vertical):disabled {
       background-color: #3d3d3d;
       background-image: none;
-      color: mix(#222222,#fff,0.5); }
+      color: mix(#222,#fff,0.5); }
     .osd spinbutton:not(.vertical) button,
     #XfceNotifyWindow spinbutton:not(.vertical) button {
       background-color: rgba(82, 82, 82, 0.8);
@@ -4162,7 +4162,7 @@ progressbar.osd {
         color: #fff; }
       .osd spinbutton:not(.vertical) button:disabled,
       #XfceNotifyWindow spinbutton:not(.vertical) button:disabled {
-        color: alpha(mix(#eee,#222222,0.6),0.8); }
+        color: alpha(mix(#eee,#222,0.6),0.8); }
       .osd spinbutton:not(.vertical) button:backdrop,
       #XfceNotifyWindow spinbutton:not(.vertical) button:backdrop {
         color: mix(white,mix(#555,#eee,0.5),0.9); }
@@ -5084,7 +5084,7 @@ switch {
     background-color: #d8d8d8;
     background-image: none;
     border-color: #ccc;
-    color: mix(#222222,#f0f0f0,0.5);
+    color: mix(#222,#f0f0f0,0.5);
     box-shadow: none; }
     switch:disabled slider {
       background-color: #e8eaec; }
@@ -5374,7 +5374,7 @@ panel-applet > menubar menuitem,
 panel-applet > menubar:backdrop menuitem,
 panel-toplevel .gnome-panel-menu-bar menuitem,
 panel-toplevel .gnome-panel-menu-bar:backdrop menuitem, wnck-pager, wnck-tasklist, .mate-panel-menu-bar, .xfce4-panel, UnityPanelWidget, .unity-panel {
-  background-color: #222222;
+  background-color: #222;
   background-image: none;
   color: #eee; }
 
@@ -5397,19 +5397,19 @@ panel-toplevel .gnome-panel-menu-bar:backdrop menuitem label, gp-calendar-window
   background-image: none;
   color: #eee; }
   #clock-applet-button:hover, panel-applet button:hover, .xfce4-panel button:hover, #login_window:hover, #shutdown_dialog:hover, #restart_dialog:hover {
-    background-color: mix(#222222,#eee,0.11);
+    background-color: mix(#222,#eee,0.11);
     background-image: none;
-    border-color: mix(#222222,#eee,0.11);
+    border-color: mix(#222,#eee,0.11);
     color: white; }
   #clock-applet-button:active, panel-applet button:active, .xfce4-panel button:active, #login_window:active, #shutdown_dialog:active, #restart_dialog:active, #clock-applet-button:checked, panel-applet button:checked, .xfce4-panel button:checked, #login_window:checked, #shutdown_dialog:checked, #restart_dialog:checked {
-    background-color: mix(#222222,#eee,0.21);
+    background-color: mix(#222,#eee,0.21);
     background-image: none;
-    border-color: mix(#222222,#eee,0.21);
+    border-color: mix(#222,#eee,0.21);
     color: white; }
     #clock-applet-button:active:hover, panel-applet button:active:hover, .xfce4-panel button:active:hover, #login_window:active:hover, #shutdown_dialog:active:hover, #restart_dialog:active:hover, #clock-applet-button:checked:hover, panel-applet button:checked:hover, .xfce4-panel button:checked:hover, #login_window:checked:hover, #shutdown_dialog:checked:hover, #restart_dialog:checked:hover {
-      background-color: mix(#222222,#eee,0.31);
+      background-color: mix(#222,#eee,0.31);
       background-image: none;
-      border-color: mix(#222222,#eee,0.31); }
+      border-color: mix(#222,#eee,0.31); }
 
 panel-plug,
 panel-toplevel.background {
@@ -5476,7 +5476,7 @@ PanelSeparator, MatePanelAppletFrameDBus {
 #PanelApplet button.flat.toggle:checked,
 #PanelApplet button.flat.toggle:checked:hover {
   background-image: none;
-  background-color: darker(#222222);
+  background-color: darker(#222);
   border-color: transparent;
   border-radius: 0;
   border-width: 1px;
@@ -6013,14 +6013,14 @@ UnityDecoration {
     border-bottom: 0;
     border-radius: 2px 2px 0 0;
     padding: 1px 8px 0 8px;
-    background-color: #222222;
-    color: mix(#eee,#222222,0.1);
+    background-color: #222;
+    color: mix(#eee,#222,0.1);
     text-shadow: none; }
     UnityDecoration .top:backdrop {
       border: 1px solid transparent;
-      color: mix(#eee,#222222,0.4); }
+      color: mix(#eee,#222,0.4); }
   UnityDecoration .left, UnityDecoration .right, UnityDecoration .bottom {
-    background-color: #222222; }
+    background-color: #222; }
     UnityDecoration .left:backdrop, UnityDecoration .right:backdrop, UnityDecoration .bottom:backdrop {
       background-color: mix(#303030,#eee,0.21); }
 
@@ -6031,8 +6031,8 @@ UnityPanelWidget, .unity-panel {
   border-width: 0 1px;
   color: #eee; }
   .unity-panel.menuitem:hover, .unity-panel.menuitem *:hover, .unity-panel .menuitem:hover, .unity-panel .menuitem *:hover {
-    border-color: mix(#222222,#eee,0.21);
-    background-color: mix(#222222,#eee,0.21);
+    border-color: mix(#222,#eee,0.21);
+    background-color: mix(#222,#eee,0.21);
     background-image: none;
     color: white; }
 
@@ -6043,7 +6043,7 @@ SheetStyleDialog.unity-force-quit {
  ! LightDM GTK Greeter *
  ***********************/
 #panel_window {
-  background-color: #222222;
+  background-color: #222;
   background-image: none;
   color: #fff;
   font-weight: bold;
@@ -6075,7 +6075,7 @@ SheetStyleDialog.unity-force-quit {
 #login_window, #shutdown_dialog, #restart_dialog {
   border-style: none;
   border-radius: 2px;
-  background-color: #222222;
+  background-color: #222;
   color: #eee;
   /* draw border using box-shadow */
   box-shadow: inset 1px 0 mix(#303030,#eee,0.21), inset -1px 0 mix(#303030,#eee,0.21), inset 0 1px mix(#303030,#eee,0.21), inset 0 -1px mix(#303030,#eee,0.21); }
@@ -6133,14 +6133,14 @@ SheetStyleDialog.unity-force-quit {
   #login_window button:disabled:disabled, #login_window button.flat:disabled:disabled {
     background-color: rgba(82, 82, 82, 0.3);
     background-image: none;
-    color: mix(#222222,#eee,0.5);
+    color: mix(#222,#eee,0.5);
     box-shadow: none; }
   #login_window button:active {
     color: #eee; }
   #login_window button.flat:disabled:disabled {
     background-color: transparent;
     background-image: none;
-    color: mix(#222222,#eee,0.5);
+    color: mix(#222,#eee,0.5);
     box-shadow: none; }
   #login_window button.separator, #login_window button .separator {
     border: 1px solid currentColor;
@@ -6148,7 +6148,7 @@ SheetStyleDialog.unity-force-quit {
     #login_window button.separator:disabled, #login_window button .separator:disabled {
       color: #454545; }
 #login_window entry {
-  background-color: #222222;
+  background-color: #222;
   background-image: none;
   border-color: #363636;
   padding: 5px;
@@ -6167,7 +6167,7 @@ SheetStyleDialog.unity-force-quit {
   #login_window entry:disabled {
     background-color: #3d3d3d;
     background-image: none;
-    color: mix(#222222,#eee,0.5); }
+    color: mix(#222,#eee,0.5); }
 
 #user_combobox {
   color: #eee;
@@ -6175,7 +6175,7 @@ SheetStyleDialog.unity-force-quit {
   #user_combobox menu {
     font-weight: normal; }
   #user_combobox arrow {
-    color: mix(#eee,#222222,0.5); }
+    color: mix(#eee,#222,0.5); }
 
 #user_image {
   border-radius: 2px;
@@ -6340,16 +6340,16 @@ SheetStyleDialog.unity-force-quit {
  ! Genome Terminal *
 ***********************/
 VteTerminal {
-  background-color: #222222;
+  background-color: #222;
   color: #eee; }
 
 terminal-window junction, terminal-window scrollbar trough {
-  background-color: #222222;
+  background-color: #222;
   border-color: #363636; }
 terminal-window scrollbar.vertical slider {
-  background-color: mix(#222222,#eee,0.2); }
+  background-color: mix(#222,#eee,0.2); }
   terminal-window scrollbar.vertical slider:hover {
-    background-color: mix(#222222,#eee,0.3); }
+    background-color: mix(#222,#eee,0.3); }
   terminal-window scrollbar.vertical slider:hover:active {
     background-color: #f0544c; }
   terminal-window scrollbar.vertical slider:disabled {
